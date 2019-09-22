@@ -1,0 +1,25 @@
+from singleton import *
+
+print("\n===  Example Singleton 1 ===")
+cs1Inst1 = clsSingleton1()
+cs1Inst2 = clsSingleton1()
+cs1Inst3 = clsSingleton1()
+print(cs1Inst1)
+print(cs1Inst2)
+print(cs1Inst3)
+
+print("\n=== Example Singleton 2 ===")
+cs2Inst1 = clsSingleton2()
+cs2Inst2 = clsSingleton2.getInstance()
+cs2Inst3 = clsSingleton2()
+print(cs2Inst1)
+print(cs2Inst2)
+print(cs2Inst3)
+
+print("\n=== Example Singleton 3 ===")
+cs3Inst1 = clsSingleton3() # iqual to cs3Inst1 = singleton(clsSingleton)
+cs3Inst2 = clsSingleton3() # iqual to cs3Inst2 = singleton(clsSingleton)
+cs3Inst3 = clsSingleton3() # iqual to cs3Inst3 = singleton(clsSingleton)
+print(cs3Inst1)
+print(cs3Inst2)
+print(cs3Inst3)
